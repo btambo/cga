@@ -1,14 +1,15 @@
 import { useState, useEffect } from 'react';
+import HamburgerIcon from './HamburgerIcon';
 import './Navbar.css';
 
 const NavBar = () => {
 
     const [hamburgerOpen, setHamburger] = useState(false);
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
-    const toggleMenu = () => setHamburger(!hamburgerOpen);
-
-    let navbarClasses = ["navbar-container"];
+       
+    const toggleMenu = () => {
+        setHamburger(!hamburgerOpen);
+    }
 
     useEffect(() => {
 
@@ -24,22 +25,18 @@ const NavBar = () => {
     
       }, [])
 
-      if (hamburgerOpen) {
-        navbarClasses = ["navbar-container", "open"];
-    } 
-
     return (
         <nav>
 
             {(hamburgerOpen || screenWidth > 700) && (
-            <ul className={navbarClasses.join(" ")}>
+            <ul className='navbar-container'>
                 <li className='navbar-element'>Our Signatures</li>
                 <li className='navbar-element'>What we do</li>
                 <li className='navbar-element'>Who we are</li>
             </ul>
             )}
 
-            <button onClick = {toggleMenu} className='hamburger-button'></button>
+            <HamburgerIcon toggleMenu={toggleMenu} isOpen={hamburgerOpen} />
 
         </nav>
     )
