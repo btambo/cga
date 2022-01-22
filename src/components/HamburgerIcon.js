@@ -3,8 +3,8 @@ import './HamburgerIcon.css';
 const HamburgerIcon = ( props ) => {
 
     const toggleIcon = () => {
-        var element = document.getElementById("nav-icon1");
-        element.classList.toggle("open");
+        var element = document.getElementById('nav-icon1');
+        element.classList.toggle('open');
     }
 
     const toggleBurgerIcon = () => {
@@ -13,7 +13,7 @@ const HamburgerIcon = ( props ) => {
     }
 
     return (
-    <div onClick={toggleBurgerIcon} id="nav-icon1">
+    <div onClick={toggleBurgerIcon} id='nav-icon1'>
         <span></span>
         <span></span>
         <span></span>
