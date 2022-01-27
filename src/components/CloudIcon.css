@@ -15,7 +15,7 @@
 .cloud-icon {
     display: block;
     height: 3.5rem;
-    width: 3.5em;
+    width: 3.5rem;
     -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .5));
     filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .5));
     animation: floating-cloud 8s linear infinite;
