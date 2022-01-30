@@ -1,3 +1,6 @@
 body {
-    background-color: #add8e6;
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(#71c7ec, 	#107dac);
+    background-repeat: no-repeat;
 }

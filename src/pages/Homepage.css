@@ -1,0 +1,38 @@
+#homepage-grid-container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#slogan-container {
+    color: white;
+    margin-left: 10%;
+    width: 40%;
+    grid-column: 2 / span 3;
+    grid-row: 2;
+}
+
+#explore-button {
+    background-color: white;
+    color: rgb(45, 139, 194);
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    height: 4rem;
+    width: 10rem;
+    border:1px solid rgb(45, 139, 194);
+    border-radius: 12px;
+    margin: 5px 5px;
+    transition: all 0.4s;
+    transition-timing-function:cubic-bezier(0.5, 3, 0, 1);
+  }
+
+  #explore-button:hover {
+      transform: scale(1.1,1.1);
+  }
+
+  #explore-button:active {
+    color: rgb(18, 91, 133);
+  }

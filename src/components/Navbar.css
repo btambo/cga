@@ -19,6 +19,7 @@ nav {
 .navbar-element {
     margin-right: 1.2rem;
     font-size: 1.2rem;
+    font-weight: 550;
     text-transform: uppercase;
     cursor: pointer;
 
@@ -46,7 +47,8 @@ nav {
         position: absolute;
         top: -1rem;
         left: 0;
-        background-color: burlywood;
+        color: #107dac;
+        background-color: rgba(255, 255, 255, 0.9);
         transform: translateX(-100%);
         transition: .3s ease-in-out;
     }
@@ -58,7 +60,7 @@ nav {
 
     .navbar-element {
         width: 100%;
-        border-top: .1rem solid rgba(151, 144, 144, 0.555);
+        border-top: .1rem solid #71c7ec;
         text-align: center;
         margin-right: 2rem;
         padding: 1rem 1rem;

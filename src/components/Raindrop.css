@@ -15,7 +15,7 @@
 }
 
 .raining .rain-drop {
-    animation: raining 1s linear infinite;
+    animation: raining .75s linear infinite;
 }
 
 .raining .rain-drop:nth-child(2) {
