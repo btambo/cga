@@ -2,12 +2,13 @@
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: .5fr 1fr 1fr .5fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 #slogan-container {
     color: white;
+    font-size: 1.5rem;
     margin-left: 10%;
     width: 40%;
     grid-column: 2 / span 3;
@@ -16,23 +17,19 @@
 
 #explore-button {
     background-color: white;
-    color: rgb(45, 139, 194);
+    color: #107dac;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 600;
     height: 4rem;
-    width: 10rem;
-    border:1px solid rgb(45, 139, 194);
-    border-radius: 12px;
+    width: 14rem;
+    border:1px solid #107dac;
+    border-radius: 40px;
     margin: 5px 5px;
-    transition: all 0.4s;
-    transition-timing-function:cubic-bezier(0.5, 3, 0, 1);
+    transition: all ease-in-out 0.3s;
   }
 
   #explore-button:hover {
-      transform: scale(1.1,1.1);
-  }
-
-  #explore-button:active {
-    color: rgb(18, 91, 133);
+      transform: translateY(-5px);
+      filter: drop-shadow( 0px 3px 2px #107dac81);
   }

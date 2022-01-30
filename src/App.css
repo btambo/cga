@@ -1,6 +1,7 @@
 body {
     height: 100vh;
     margin: 0;
-    background: radial-gradient(#71c7ec, 	#107dac);
+    background: radial-gradient(#9AD0EC,#1572A1);
     background-repeat: no-repeat;
+    font-family: 'DM Serif Display'
 }
