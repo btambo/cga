@@ -1,0 +1,32 @@
+.default-card {
+    background-color: #1892b1;
+    color: #ffffff;
+}
+
+.birthday-card {
+    background-color: honeydew;
+    color: mediumpurple;
+}
+
+.graduation-card {
+    background-color: goldenrod;
+    color: fuchsia;
+}
+
+
+.default-main {
+    background-color: white;
+    color: #1892b1;
+}
+
+.birthday-main {
+    background-color: mediumpurple;
+    color: honeydew;
+}
+
+.graduation-main {
+    background-color: fuchsia;
+    color: goldenrod;
+}
+
+

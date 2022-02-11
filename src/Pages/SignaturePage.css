@@ -1,0 +1,6 @@
+.signature-page {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    transition: all .2s linear;
+}
