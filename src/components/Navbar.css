@@ -1,7 +1,7 @@
 nav {
     display: grid;
     width: 100%;
-    grid-template-columns: .35fr 1fr;
+    grid-template-columns: .15fr 1fr;
     position: fixed;
     top: 0;
 }
@@ -58,7 +58,7 @@ img.logo {
   }
 
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 720px){
 
     #logo-container {
         display: none;

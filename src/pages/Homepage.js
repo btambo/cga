@@ -1,4 +1,3 @@
-import CloudIcon from '../components/CloudIcon.js';
 import './Homepage.css';
 
 const Homepage = () => {
@@ -8,10 +7,13 @@ const Homepage = () => {
                 <h1>Knowing how to sign a card can be hard.</h1>
                 <p>Luckily, we've got you covered!
                     Whatever card you need help signing,
-                    cga makes it easy for you. Discover your
+                    we makes it easy for you. Discover your
                     signature today.
                 </p>
-                <button id='explore-button'>Explore</button>
+                <div id='button-container'>
+                    <button className='homepage-button'>Explore Cards</ button>
+                    <button className='homepage-button'>What we do</ button>
+                </div>
             </div>
         </div>
     )
