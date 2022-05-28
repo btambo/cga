@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import HamburgerIcon from './HamburgerIcon';
 import './Navbar.css';
+import Logo from '../images/Logo.svg'
 
 const NavBar = () => {
 
@@ -19,6 +20,10 @@ const NavBar = () => {
 
     return (
         <nav>
+            <ul id='logo-container'>
+                <img src={Logo} alt='card' className='logo' />
+                <li className='logo'>cga</li>
+            </ul>
             
             <ul id='navbar-container'>
                 <Link className='navbar-element' to="/signatures">Our Signatures</Link>
