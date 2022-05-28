@@ -1,6 +1,12 @@
+/* Unflipped themes for cards */
 .default-card {
     background-color: #1892b1;
     color: #ffffff;
+}
+
+.valentine-card {
+    background-color: #F0B5BD;
+    color: #B11D4D;
 }
 
 .birthday-card {
@@ -14,9 +20,15 @@
 }
 
 
+/* Flipped themes for main */
 .default-main {
     background-color: white;
     color: #1892b1;
+}
+
+.valentine-main {
+    background-color: #B11D4D;
+    color: #F0B5BD;
 }
 
 .birthday-main {
