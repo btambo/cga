@@ -1,0 +1,12 @@
+.signature-container {
+    display: flex;
+    align-content: center;
+}
+
+.signature-table {
+    width: 100%;
+    table-layout: fixed;
+    padding: 1%;
+    align-content: center;
+}
+
