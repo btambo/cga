@@ -42,6 +42,7 @@ img.logo {
 }
 
 .navbar-element {
+    text-decoration: none;
     margin-right: 1.2rem;
     font-size: 1.2rem;
     font-weight: 550;
@@ -51,6 +52,11 @@ img.logo {
     background-repeat: no-repeat;
     background-size: 0 100%;
     transition: background-size .4s ease;
+}
+
+a:visited { 
+    color: white;
+    text-decoration: none;
 }
 
 .navbar-element:hover {

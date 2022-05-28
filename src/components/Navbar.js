@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import HamburgerIcon from './HamburgerIcon';
 import './Navbar.css';
 import Logo from '../images/Logo.svg'
@@ -18,13 +19,14 @@ const NavBar = () => {
     }
 
     return (
-        <nav >
+        <nav>
             <ul id='logo-container'>
                 <img src={Logo} alt='card' className='logo' />
                 <li className='logo'>cga</li>
             </ul>
+            
             <ul id='navbar-container'>
-                <li className='navbar-element'>Our Signatures</li>
+                <Link className='navbar-element' to="/signatures">Our Signatures</Link>
                 <li className='navbar-element'>What we do</li>
                 <li className='navbar-element'>Who we are</li>
             </ul>
