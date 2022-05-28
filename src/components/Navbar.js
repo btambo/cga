@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import HamburgerIcon from './HamburgerIcon';
 import './Navbar.css';
 
@@ -18,9 +19,9 @@ const NavBar = () => {
 
     return (
         <nav>
-
+            
             <ul id='navbar-container'>
-                <li className='navbar-element'>Our Signatures</li>
+                <Link className='navbar-element' to="/signatures">Our Signatures</Link>
                 <li className='navbar-element'>What we do</li>
                 <li className='navbar-element'>Who we are</li>
             </ul>
