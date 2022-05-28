@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CardCarousel from '../components/CardCarousel/CardCarousel';
+import CardCarousel from '../Components/CardCarousel/CardCarousel';
 import './Themes.css';
 import './SignaturePage.css';
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import SignaturesPage from './pages/SignaturesPage';
+import SignaturesPage from './Pages/SignaturesPage';
 import './App.css';
-import NavBar from './components/Navbar';
-import HomePage from './pages/HomePage';
+import NavBar from './Components/Navbar';
+import HomePage from './Pages/HomePage';
 
 
 function App() {

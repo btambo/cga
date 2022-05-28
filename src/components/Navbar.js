@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import HamburgerIcon from './HamburgerIcon';
 import './Navbar.css';
-import Logo from '../images/Logo.svg'
+import Logo from '../Images/logo.svg'
 
 const NavBar = () => {
 
