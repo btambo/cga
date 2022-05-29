@@ -40,6 +40,7 @@ const CardCarousel = (props) => {
       >
         {Object.keys(CardTypes).map((CardType, index) => 
           <Card 
+            key={index}
             ImageLink={CardTypes[CardType]['link']} 
             Overlay={CardTypes[CardType]['overlay']} 
             Theme={CardTypes[CardType]['theme']} 
