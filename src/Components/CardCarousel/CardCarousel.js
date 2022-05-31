@@ -31,6 +31,7 @@ const CardCarousel = (props) => {
 
     return (
       <Carousel
+        containerClass='carousel-container'
         showDots={true}
         infinite={true}
         removeArrowOnDeviceType={["tablet", "mobile"]}
