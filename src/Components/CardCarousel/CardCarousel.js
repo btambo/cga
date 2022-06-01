@@ -31,6 +31,7 @@ const CardCarousel = (props) => {
 
     return (
       <Carousel
+        containerClass='carousel-container'
         showDots={true}
         infinite={true}
         removeArrowOnDeviceType={["tablet", "mobile"]}
@@ -40,6 +41,7 @@ const CardCarousel = (props) => {
       >
         {Object.keys(CardTypes).map((CardType, index) => 
           <Card 
+            key={index}
             ImageLink={CardTypes[CardType]['link']} 
             Overlay={CardTypes[CardType]['overlay']} 
             Theme={CardTypes[CardType]['theme']} 
