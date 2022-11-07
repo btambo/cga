@@ -4,7 +4,9 @@ import './Navbar.css';
 import Logo from '../Images/logo.svg'
 import { FiMenu, FiX } from "react-icons/fi";
 
-const NavBar = () => {
+const NavBar = (props) => {
+
+    const { currentTheme } = props || {};
 
     const [menuToggle, setMenuToggle] = useState(false);
 
@@ -17,7 +19,7 @@ const NavBar = () => {
     }
 
     return (
-        <nav className='navbar-container'>
+        <nav className={`navbar-container`}>
 
             <NavLink className="navbar-logo" exact to='/' onClick={handleCloseMenu}>
                 <img src={Logo} alt='card' className='navbar-logo-img' />
