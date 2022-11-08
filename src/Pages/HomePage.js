@@ -1,6 +1,13 @@
+import { useEffect, useState } from 'react';
 import './HomePage.css';
 
-const HomePage = () => {
+const HomePage = (props) => {
+    const { currentTheme, setCurrentTheme } = props || {};
+
+    useEffect(() => {
+        setCurrentTheme('')
+    }, [currentTheme]);
+    
     return (
         <div id='homepage-grid-container'>
             <div id='slogan-container'>

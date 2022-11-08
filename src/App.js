@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignaturesPage from './Pages/SignaturesPage';
 import './App.css';
@@ -8,13 +8,15 @@ import HomePage from './Pages/HomePage';
 
 function App() {
 
+  const [currentTheme, setCurrentTheme] = useState('');
+
   return (
-      <div className="App">
+      <div className={`App ${currentTheme}-main`}>
         <BrowserRouter>
-          <NavBar/>
+          <NavBar currentTheme={currentTheme}/>
           <Routes>
-            <Route path="/" element={<HomePage/>}/>
-            <Route path="/Signatures" element={<SignaturesPage/>} />
+            <Route path="/" element={<HomePage currentTheme={currentTheme} setCurrentTheme={setCurrentTheme}/>}/>
+            <Route path="/Signatures" element={<SignaturesPage currentTheme={currentTheme} setCurrentTheme={setCurrentTheme}/>} />
           </Routes>
         </BrowserRouter>
       </div>

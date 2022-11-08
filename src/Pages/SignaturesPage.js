@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import CardCarousel from '../Components/CardCarousel/CardCarousel';
 import { familySignatures, friendSignatures, acquaintanceSignatures } from '../Constants/constants';
-import './Themes.css';
 import './SignaturePage.css';
 import SignatureTable from '../Components/SignaturesTable/SignatureTable';
 
 
-const SignaturesPage = () => {
+const SignaturesPage = (props) => {
 
-    const [currentTheme, setCurrentTheme] = useState('default');
+    const { currentTheme, setCurrentTheme } = props || {};
+
     const [isDesktop, setIsDesktop] = useState(true)
     
     return (
-        <div className={`signature-page ${currentTheme}-main`}>
+        <div className={`signature-page`}>
 
             <CardCarousel 
                 currentTheme={currentTheme} 
