@@ -1,7 +1,10 @@
 .signature-page {
+    display: block;
+    position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 90vh;
     margin: 0;
+    padding: 0;
     transition: all .2s linear;
 }
 
